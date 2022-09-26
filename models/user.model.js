@@ -36,10 +36,6 @@ const userSchema = new mongoose.Schema(
       required: true,
       default: false,
     },
-    bio: {
-      type: String,
-      max: 1024,
-    },
     likes: {
       type: [String],
     },
