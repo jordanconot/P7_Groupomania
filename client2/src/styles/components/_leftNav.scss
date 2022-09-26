@@ -1,0 +1,60 @@
+.left-nav-container {
+  position: relative;
+
+  .icons {
+    position: fixed;
+    z-index: 10;
+
+    @media screen and(max-width: 590px) {
+      margin: 2px 0 0 -9px;
+      left: 15px;
+    }
+
+    .icons-bis {
+      position: absolute;
+      left: 8px;
+
+      img {
+        height: 44px;
+        width: 44px;
+      }
+
+      a {
+        transition: 0.1s;
+        display: inline-block;
+
+        &:before {
+          transition: 0.15s ease;
+          transform: scale(0);
+          transform-origin: center;
+          z-index: -10;
+          content: '';
+          height: 52px;
+          width: 46px;
+          position: absolute;
+          background: $color-2;
+          border-radius: 50px;
+        }
+
+        &:hover {
+          transform: scale(1.02);
+        }
+        &:hover::before {
+          transform: scale(1);
+          @media screen and(max-width: 590px) {
+            background: $color-3;
+            height: 38px;
+            width: 36px;
+          }
+        }
+
+        img {
+          @media screen and(max-width: 590px) {
+            height: 34px;
+            width: 34px;
+          }
+        }
+      }
+    }
+  }
+}
