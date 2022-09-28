@@ -5,7 +5,7 @@ dans client exécuter npm install
 # Variables d'Environnement
 Créé un fichier .env dans le dossier config avec :
 PORT="5000"
-DB_USER_PASS="mot de passe MongoDB"
+DB_USER_PASS="jordan:groupomania"
 TOKEN_JWT="Salé un nombre pour bcrypt"
 CLIENT_URL="3000"
 
